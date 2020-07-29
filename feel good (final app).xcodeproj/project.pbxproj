@@ -14,6 +14,7 @@
 		08D51C9B24D0AD270095E2DC /* feel_good__final_app_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08D51C9924D0AD270095E2DC /* feel_good__final_app_.xcdatamodeld */; };
 		08D51C9D24D0AD290095E2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D51C9C24D0AD290095E2DC /* Assets.xcassets */; };
 		08D51CA024D0AD290095E2DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D51C9E24D0AD290095E2DC /* LaunchScreen.storyboard */; };
+		08D51CAA24D125D10095E2DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D51CA924D125D10095E2DC /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		08D51C9C24D0AD290095E2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08D51C9F24D0AD290095E2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08D51CA124D0AD290095E2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08D51CA924D125D10095E2DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				08D51C9224D0AD270095E2DC /* SceneDelegate.swift */,
 				08D51C9424D0AD270095E2DC /* ViewController.swift */,
 				08D51C9624D0AD270095E2DC /* Main.storyboard */,
+				08D51CA924D125D10095E2DC /* SignUpViewController.swift */,
 				08D51C9C24D0AD290095E2DC /* Assets.xcassets */,
 				08D51C9E24D0AD290095E2DC /* LaunchScreen.storyboard */,
 				08D51CA124D0AD290095E2DC /* Info.plist */,
@@ -145,6 +148,7 @@
 				08D51C9B24D0AD270095E2DC /* feel_good__final_app_.xcdatamodeld in Sources */,
 				08D51C9124D0AD270095E2DC /* AppDelegate.swift in Sources */,
 				08D51C9324D0AD270095E2DC /* SceneDelegate.swift in Sources */,
+				08D51CAA24D125D10095E2DC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
