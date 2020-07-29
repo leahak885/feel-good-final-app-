@@ -15,33 +15,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feel good." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU6-6N-Zve">
-                                <rect key="frame" x="125" y="404" width="164" height="88"/>
-                                <fontDescription key="fontDescription" name="Bubblegums" family="bubblegums" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-QA-gM5">
-                                <rect key="frame" x="158" y="541" width="99" height="32"/>
-                                <color key="backgroundColor" red="0.83921568627450982" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-Os-fFG">
+                                <rect key="frame" x="0.0" y="293" width="414" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXQ-VN-WXA">
+                                        <rect key="frame" x="8" y="49" width="398" height="334"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VM3-ey-6R2">
+                                                <rect key="frame" x="104" y="72" width="190" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.94215901992092399" green="0.94394798801369861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.6471033692" green="0.73557806020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-8P-Cl5">
+                                                <rect key="frame" x="104" y="139" width="190" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.94215901992092399" green="0.94394798801369861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.6471033692" green="0.73557806020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4b-CL-hvB">
+                                                <rect key="frame" x="147" y="200" width="105" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.5" green="0.63639676739178086" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64710336923599243" green="0.73557806015014648" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gXQ-VN-WXA" firstAttribute="centerX" secondItem="XoZ-Os-fFG" secondAttribute="centerX" id="4gU-nS-a1R"/>
+                                    <constraint firstItem="gXQ-VN-WXA" firstAttribute="centerY" secondItem="XoZ-Os-fFG" secondAttribute="centerY" id="5Bi-aK-2dL"/>
+                                    <constraint firstItem="gXQ-VN-WXA" firstAttribute="width" secondItem="XoZ-Os-fFG" secondAttribute="height" multiplier="398:603" id="yPg-si-rs7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_2079" translatesAutoresizingMaskIntoConstraints="NO" id="03Z-lL-cM1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_2074" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-6l-31U">
+                                <rect key="frame" x="0.0" y="83" width="414" height="214"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NZf-a0-BTt">
+                                <rect key="frame" x="-84" y="593" width="566" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-PY-Efp">
+                                <rect key="frame" x="114" y="741" width="187" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign up">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="HQW-Pt-jfA" kind="show" id="xzs-oq-U8O"/>
+                                    <action selector="showSignInPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdl-Sb-M8B"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.65098039215686276" green="0.73725490196078436" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.64710336923599243" green="0.73557806015014648" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UI0-QA-gM5" firstAttribute="top" secondItem="QU6-6N-Zve" secondAttribute="bottom" constant="50" id="2z2-B4-TCm"/>
-                            <constraint firstItem="QU6-6N-Zve" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Off-wV-Jig"/>
-                            <constraint firstItem="QU6-6N-Zve" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="Yuo-Om-7E9"/>
-                            <constraint firstItem="QU6-6N-Zve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nKT-Sm-isE"/>
-                            <constraint firstItem="QU6-6N-Zve" firstAttribute="centerX" secondItem="UI0-QA-gM5" secondAttribute="centerX" id="vgc-9H-REc"/>
-                            <constraint firstItem="QU6-6N-Zve" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="ye1-ec-bpS"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="EE9-HI-jvb"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ULo-XY-NZH"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fEy-eq-qcX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,7 +126,7 @@
             <objects>
                 <viewController id="HQW-Pt-jfA" customClass="SignUpViewController" customModule="feel_good__final_app_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPh-H7-ozZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-lb-kvX">
@@ -64,7 +135,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuk-7K-PGb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ghC-qa-L7l"/>
                                 </constraints>
@@ -85,6 +156,13 @@
                                     <segue destination="egI-Gd-GNG" kind="show" id="CaL-pH-jy5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="make &quot;continue&quot; only clickable when both things r filled out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRN-8W-1iU">
+                                <rect key="frame" x="9" y="520" width="405" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.73725490196078436" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -196,4 +274,9 @@
             <point key="canvasLocation" x="2519" y="128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Box" width="3464" height="3464"/>
+        <image name="IMG_2074" width="414" height="436.5"/>
+        <image name="IMG_2079" width="828" height="1792"/>
+    </resources>
 </document>
