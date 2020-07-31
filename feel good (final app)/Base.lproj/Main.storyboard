@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DBD-sB-ahg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -19,21 +19,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_2108" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-6l-31U">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2108" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-6l-31U">
                                 <rect key="frame" x="0.0" y="83" width="414" height="214"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i4X-6l-31U" secondAttribute="height" multiplier="207:107" id="IbW-iP-IXo"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="make &quot;continue&quot; only clickable when both things r filled out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-qu-JGu">
-                                <rect key="frame" x="5" y="251" width="405" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-PY-Efp">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-PY-Efp">
                                 <rect key="frame" x="114" y="729" width="187" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oaf-PY-Efp" secondAttribute="height" multiplier="187:82" id="m4A-lF-EhH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sign up">
@@ -50,10 +48,12 @@
                                     <segue destination="f2Y-Bj-T2h" kind="show" id="X1F-tZ-HnA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrB-g1-ett">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrB-g1-ett">
                                 <rect key="frame" x="114" y="607" width="187" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yrB-g1-ett" secondAttribute="height" multiplier="187:82" id="0ok-qp-mEe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Log In">
@@ -67,14 +67,41 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showSignInPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTK-dy-cjk"/>
+                                    <action selector="textView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPL-fQ-TNQ"/>
+                                    <segue destination="dfd-Fp-tg5" kind="show" id="aQo-66-fUV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.64710336923599243" green="0.73557806015014648" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oaf-PY-Efp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="0R8-a2-cOw"/>
+                            <constraint firstItem="oaf-PY-Efp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="3ga-G3-jCm"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="4HV-Oe-m2w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oaf-PY-Efp" secondAttribute="trailing" constant="113" id="9Tg-MG-1E3"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="CFh-Vd-6Ar"/>
                             <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="EE9-HI-jvb"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EVX-b0-0td"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="Iu7-23-nRU"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KGu-2J-nyO"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="top" secondItem="i4X-6l-31U" secondAttribute="bottom" constant="310" id="PpU-fx-THq"/>
                             <constraint firstItem="i4X-6l-31U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ULo-XY-NZH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oaf-PY-Efp" secondAttribute="trailing" constant="113" id="Vfb-ZO-dDQ"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="top" secondItem="i4X-6l-31U" secondAttribute="bottom" constant="310" id="WRh-qn-HhL"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="top" secondItem="i4X-6l-31U" secondAttribute="bottom" constant="310" id="Xrs-vD-U58"/>
                             <constraint firstItem="i4X-6l-31U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fEy-eq-qcX"/>
+                            <constraint firstItem="oaf-PY-Efp" firstAttribute="top" secondItem="yrB-g1-ett" secondAttribute="bottom" constant="40" id="gh4-uQ-sxJ"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jbG-CU-P7A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yrB-g1-ett" secondAttribute="trailing" constant="113" id="kQf-Dk-eTk"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="kvv-oO-Scn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oaf-PY-Efp" secondAttribute="bottom" constant="51" id="p10-rl-WMZ"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEz-gT-JQe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yrB-g1-ett" secondAttribute="trailing" constant="113" id="rKy-AM-kRi"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="tAP-77-PeQ"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tXU-Tk-9b3"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="tnK-GG-x4h"/>
+                            <constraint firstItem="i4X-6l-31U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vJP-Mk-hzj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oaf-PY-Efp" secondAttribute="bottom" constant="51" id="xY5-dc-YaZ"/>
+                            <constraint firstItem="yrB-g1-ett" firstAttribute="top" secondItem="i4X-6l-31U" secondAttribute="bottom" constant="310" id="zNO-Zl-bz1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -455,7 +482,7 @@ Calories: 345 calories
                                         <color key="backgroundColor" red="0.94215901992092399" green="0.94394798801369861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.6471033692" green="0.73557806020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -468,7 +495,7 @@ Calories: 345 calories
                                         <color key="backgroundColor" red="0.94215901992092399" green="0.94394798801369861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.6471033692" green="0.73557806020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -516,27 +543,27 @@ Calories: 345 calories
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urv-Gr-dUz">
-                                <rect key="frame" x="99" y="319" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urv-Gr-dUz">
+                                <rect key="frame" x="227" y="355" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="urv-Gr-dUz" secondAttribute="height" multiplier="97:34" id="PLn-Ir-sQz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bk9-pw-brD">
-                                <rect key="frame" x="99" y="391" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bk9-pw-brD">
+                                <rect key="frame" x="227" y="448" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bk9-pw-brD" secondAttribute="height" multiplier="97:34" id="nAw-co-9FV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-B1-ljD">
-                                <rect key="frame" x="99" y="462" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-NU-TYu">
-                                <rect key="frame" x="161" y="175" width="233" height="149"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-NU-TYu">
+                                <rect key="frame" x="91" y="162" width="233" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vvf-NU-TYu" secondAttribute="height" multiplier="233:149" id="N2H-ON-Hkx"/>
+                                </constraints>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
                                     <!--1950-01-01 11:00:00 +0000-->
                                 </date>
@@ -544,59 +571,105 @@ Calories: 345 calories
                                     <!--2020-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height/weight can be sliders?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG4-si-VYs">
-                                <rect key="frame" x="150" y="362" width="226" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal(s) input can be drop-down/scrolling menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-T8-XbJ">
-                                <rect key="frame" x="33" y="532" width="361" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="assign variables to user info input to display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-zT-W4u">
-                                <rect key="frame" x="20" y="622" width="417" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" on profile page later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ8-3w-BoM">
-                                <rect key="frame" x="31" y="651" width="417" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I83-fl-SEK">
-                                <rect key="frame" x="150" y="757" width="72" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Input your birthday" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kWk-Qh-l8G">
+                                <rect key="frame" x="115" y="125" width="185" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="lRp-gh-nf5"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-B1-ljD">
+                                <rect key="frame" x="227" y="554" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QbA-B1-ljD" secondAttribute="height" multiplier="97:34" id="Exg-rO-zdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Height:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-nh-6MR">
+                                <rect key="frame" x="37" y="353" width="185" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zjw-nh-6MR" secondAttribute="height" multiplier="5:1" id="IdO-s5-jdy"/>
+                                    <constraint firstAttribute="height" constant="37" id="fLH-SG-MQy"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Weight:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="grc-XC-P1K">
+                                <rect key="frame" x="37" y="447" width="185" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="grc-XC-P1K" secondAttribute="height" multiplier="5:1" id="bGk-dC-MwM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Gender:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-MH-B59">
+                                <rect key="frame" x="29" y="552" width="190" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zE3-MH-B59" secondAttribute="height" multiplier="5:1" id="SfS-JK-nyU"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I83-fl-SEK">
+                                <rect key="frame" x="152" y="754" width="111" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gG2-qk-xcX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="--&gt;"/>
                                 <connections>
                                     <segue destination="dfd-Fp-tg5" kind="show" id="3rK-lO-roW"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age/bday?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-Dv-Qfs">
-                                <rect key="frame" x="20" y="232" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.73725490196078436" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kWk-Qh-l8G" firstAttribute="centerX" secondItem="vvf-NU-TYu" secondAttribute="centerX" id="0Lo-tC-5cT"/>
+                            <constraint firstItem="vvf-NU-TYu" firstAttribute="top" secondItem="kWk-Qh-l8G" secondAttribute="bottom" id="9ZK-qw-9iL"/>
+                            <constraint firstItem="QbA-B1-ljD" firstAttribute="leading" secondItem="zE3-MH-B59" secondAttribute="trailing" constant="8" id="9dC-3E-TvO"/>
+                            <constraint firstItem="9DF-8E-s1M" firstAttribute="trailing" secondItem="vvf-NU-TYu" secondAttribute="trailing" constant="90" id="ITa-rU-zKW"/>
+                            <constraint firstItem="grc-XC-P1K" firstAttribute="top" secondItem="Zjw-nh-6MR" secondAttribute="bottom" constant="57" id="MS8-0r-kWM"/>
+                            <constraint firstItem="vvf-NU-TYu" firstAttribute="leading" secondItem="9DF-8E-s1M" secondAttribute="leading" constant="91" id="Okj-Zg-fQL"/>
+                            <constraint firstItem="Zjw-nh-6MR" firstAttribute="leading" secondItem="9DF-8E-s1M" secondAttribute="leading" constant="37" id="RYF-Qk-PIM"/>
+                            <constraint firstItem="kWk-Qh-l8G" firstAttribute="centerX" secondItem="I83-fl-SEK" secondAttribute="centerX" id="Sja-le-a5Y"/>
+                            <constraint firstItem="urv-Gr-dUz" firstAttribute="leading" secondItem="Zjw-nh-6MR" secondAttribute="trailing" constant="5" id="UJ9-zu-sjv"/>
+                            <constraint firstItem="I83-fl-SEK" firstAttribute="top" secondItem="QbA-B1-ljD" secondAttribute="bottom" constant="166" id="UNu-21-lZ3"/>
+                            <constraint firstItem="urv-Gr-dUz" firstAttribute="leading" secondItem="Zjw-nh-6MR" secondAttribute="trailing" constant="5" id="UUy-8k-pfI"/>
+                            <constraint firstItem="zE3-MH-B59" firstAttribute="top" secondItem="grc-XC-P1K" secondAttribute="bottom" constant="68" id="X7J-La-x2m"/>
+                            <constraint firstItem="urv-Gr-dUz" firstAttribute="top" secondItem="vvf-NU-TYu" secondAttribute="bottom" constant="44" id="bxC-Ld-uT6"/>
+                            <constraint firstItem="I83-fl-SEK" firstAttribute="top" secondItem="zE3-MH-B59" secondAttribute="bottom" constant="164" id="cfq-HE-di2"/>
+                            <constraint firstItem="bk9-pw-brD" firstAttribute="leading" secondItem="grc-XC-P1K" secondAttribute="trailing" constant="5" id="f4O-B3-MaQ"/>
+                            <constraint firstItem="9DF-8E-s1M" firstAttribute="trailing" secondItem="kWk-Qh-l8G" secondAttribute="trailing" constant="114" id="giI-jX-ANF"/>
+                            <constraint firstItem="QbA-B1-ljD" firstAttribute="top" secondItem="bk9-pw-brD" secondAttribute="bottom" constant="72" id="h5V-l9-YcQ"/>
+                            <constraint firstItem="QbA-B1-ljD" firstAttribute="centerY" secondItem="zE3-MH-B59" secondAttribute="centerY" id="hOb-5L-B3c"/>
+                            <constraint firstItem="kWk-Qh-l8G" firstAttribute="top" secondItem="9DF-8E-s1M" secondAttribute="top" constant="81" id="jkd-rM-edP"/>
+                            <constraint firstItem="I83-fl-SEK" firstAttribute="leading" secondItem="9DF-8E-s1M" secondAttribute="leading" constant="152" id="oT9-2z-Gs4"/>
+                            <constraint firstItem="9DF-8E-s1M" firstAttribute="trailing" secondItem="bk9-pw-brD" secondAttribute="trailing" constant="90" id="ohY-4T-bpc"/>
+                            <constraint firstItem="bk9-pw-brD" firstAttribute="top" secondItem="urv-Gr-dUz" secondAttribute="bottom" constant="59" id="paz-fF-usP"/>
+                            <constraint firstItem="grc-XC-P1K" firstAttribute="leading" secondItem="9DF-8E-s1M" secondAttribute="leading" constant="37" id="sBk-YJ-kfB"/>
+                            <constraint firstItem="kWk-Qh-l8G" firstAttribute="leading" secondItem="9DF-8E-s1M" secondAttribute="leading" constant="115" id="sqb-1n-vGs"/>
+                            <constraint firstItem="QbA-B1-ljD" firstAttribute="leading" secondItem="bk9-pw-brD" secondAttribute="leading" id="uJ4-pu-ORx"/>
+                            <constraint firstItem="9DF-8E-s1M" firstAttribute="bottom" secondItem="I83-fl-SEK" secondAttribute="bottom" constant="53" id="xdb-iX-OFw"/>
+                            <constraint firstItem="QbA-B1-ljD" firstAttribute="leading" secondItem="zE3-MH-B59" secondAttribute="trailing" constant="8" id="ydc-ut-X2u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9DF-8E-s1M"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sav-TW-w4o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiE-vF-Tay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2355" y="-656"/>
+            <point key="canvasLocation" x="2353.6231884057975" y="-656.25"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YHc-Zs-p6x">
@@ -606,19 +679,22 @@ Calories: 345 calories
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKL-o5-utK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKL-o5-utK">
                                 <rect key="frame" x="147" y="361.5" width="121" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VKL-o5-utK" secondAttribute="height" multiplier="121:122" id="QCE-EH-61L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.84196752309799194" green="0.72109025716781616" blue="0.71994239091873169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Profile" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-NB-64d">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-NB-64d">
                                 <rect key="frame" x="261" y="444" width="98" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Mind" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -631,6 +707,7 @@ Calories: 345 calories
                                 <rect key="frame" x="159" y="243.5" width="97" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Inspo" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -640,6 +717,7 @@ Calories: 345 calories
                                 <rect key="frame" x="53" y="302.5" width="99" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Meal Prep" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -648,10 +726,13 @@ Calories: 345 calories
                                     <segue destination="DBD-sB-ahg" kind="show" id="NyA-kc-ev6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdr-FJ-Ozg">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdr-FJ-Ozg">
                                 <rect key="frame" x="159" y="500" width="97" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bdr-FJ-Ozg" secondAttribute="height" multiplier="97:92" id="SE3-SK-cCq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Counter" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -661,15 +742,16 @@ Calories: 345 calories
                                 <rect key="frame" x="261" y="303" width="98" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Calendar" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qv-fR-uba">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qv-fR-uba">
                                 <rect key="frame" x="53" y="444" width="99" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <color key="tintColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Tracker" backgroundImage="circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -677,6 +759,13 @@ Calories: 345 calories
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.84060543779999997" green="0.78924208880000002" blue="0.71785408260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vz8-EY-f3G" firstAttribute="trailing" secondItem="VKL-o5-utK" secondAttribute="trailing" constant="146" id="EM3-2N-x3A"/>
+                            <constraint firstItem="VKL-o5-utK" firstAttribute="leading" secondItem="vz8-EY-f3G" secondAttribute="leading" constant="147" id="LAw-0a-Vc3"/>
+                            <constraint firstItem="bdr-FJ-Ozg" firstAttribute="leading" secondItem="2qv-fR-uba" secondAttribute="trailing" constant="7" id="mR5-Rv-P4b"/>
+                            <constraint firstItem="bdr-FJ-Ozg" firstAttribute="top" secondItem="VKL-o5-utK" secondAttribute="bottom" constant="16.5" id="ngU-ef-XHn"/>
+                            <constraint firstItem="JOL-NB-64d" firstAttribute="leading" secondItem="bdr-FJ-Ozg" secondAttribute="trailing" constant="5" id="x1t-55-IO2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vz8-EY-f3G"/>
                     </view>
                     <navigationItem key="navigationItem" id="bdY-bY-9Se"/>
@@ -704,6 +793,7 @@ Calories: 345 calories
                                 <rect key="frame" x="20" y="155" width="169" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84059542417526245" green="0.78917700052261353" blue="0.72196280956268311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Shift the Thinking">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
@@ -737,6 +827,7 @@ Calories: 345 calories
                                 <rect key="frame" x="225" y="297" width="169" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84060543779999997" green="0.78924208880000002" blue="0.71785408260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Weight Gain">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
@@ -748,6 +839,7 @@ Calories: 345 calories
                                 <rect key="frame" x="20" y="443" width="169" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84060543779999997" green="0.78924208880000002" blue="0.71785408260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Bulimia Nervosa">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
@@ -759,6 +851,7 @@ Calories: 345 calories
                                 <rect key="frame" x="225" y="443" width="169" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84060543779999997" green="0.78924208880000002" blue="0.71785408260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <state key="normal" title="Anorexia Nervosa">
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
@@ -799,20 +892,12 @@ Calories: 345 calories
                                     <segue destination="xKo-lP-RSz" kind="presentation" id="LoO-2M-Sry"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Developing A Healthy Mindset About Eating" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-ZJ-z0W">
-                                <rect key="frame" x="207" y="181" width="204" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Weight Loss vs. Mental Health " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qkx-vc-qh1">
                                 <rect key="frame" x="28" y="323" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Social Media and Our Mental Health" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-qm-X9l">
@@ -820,7 +905,7 @@ Calories: 345 calories
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Social Media Affecting Weight " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MOp-3R-NGv">
@@ -828,7 +913,15 @@ Calories: 345 calories
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Developing A Healthy Mindset About Eating" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-ZJ-z0W">
+                                <rect key="frame" x="225" y="172" width="169" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -849,43 +942,28 @@ Calories: 345 calories
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="How shifting your mindset can help you genuinely enjoy working out " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65X-Br-ice">
-                                <rect key="frame" x="45" y="29" width="324" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08R-f7-kVO">
                                 <rect key="frame" x="20" y="156" width="374" height="555"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14C-1y-Ksf">
-                                        <rect key="frame" x="8" y="62" width="347" height="278"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">When you’re conditioned to think negatively about fitness and yourself, it’s not always easy to change your mindset. But it’s worth it to try — for your body and your life. “If you start approaching fitness with a positive mind, you’re going to start to actually enjoy working out,” says Aaptiv Trainer Benjamin Green. “Starting your workouts from a positive place even 80 percent of the time will lead to long-term success, and you’ll become happier in your personal life too.”</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-Dy-UGl">
-                                        <rect key="frame" x="14" y="339" width="347" height="214"/>
+                                        <rect key="frame" x="14" y="328" width="347" height="225"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Giamo agrees. “You begin to appreciate what your body can do for you and you start to celebrate the fact that you have the opportunity to live a healthy lifestyle,” she says. “Gratitude is a powerful motivator — it will never fail you. We should all take a moment to be thankful for our bodies and the work they do for us every day.”</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift the Thinking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-77-Kwv">
-                                        <rect key="frame" x="8" y="21" width="190" height="30"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14C-1y-Ksf">
+                                        <rect key="frame" x="8" y="8" width="353" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">When you’re conditioned to think negatively about fitness and yourself, it’s not always easy to change your mindset. But it’s worth it to try — for your body and your life. “If you start approaching fitness with a positive mind, you’re going to start to actually enjoy working out,” says Aaptiv Trainer Benjamin Green. “Starting your workouts from a positive place even 80 percent of the time will lead to long-term success, and you’ll become happier in your personal life too.”</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -908,6 +986,14 @@ Calories: 345 calories
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="How shifting your mindset can help you genuinely enjoy working out " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65X-Br-ice">
+                                <rect key="frame" x="33" y="20" width="349" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.83921568629999999" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ifg-mP-5nh"/>
@@ -918,7 +1004,7 @@ Calories: 345 calories
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8G-kf-rc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4272" y="-127"/>
+            <point key="canvasLocation" x="4271.0144927536239" y="-127.23214285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="i4W-xi-zHI">
@@ -1489,8 +1575,8 @@ Include more fresh fruits, vegetables and whole grains in your diet. These foods
         <image name="circle.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iqc-jp-X5V"/>
-        <segue reference="ZHF-Hk-l4E"/>
+        <segue reference="xRx-2W-tk6"/>
+        <segue reference="aQo-66-fUV"/>
         <segue reference="X1F-tZ-HnA"/>
         <segue reference="NyA-kc-ev6"/>
     </inferredMetricsTieBreakers>
